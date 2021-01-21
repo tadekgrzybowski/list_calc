@@ -15,6 +15,7 @@ if __name__ == '__main__':
 
         print(" 's' - sortuj malejąco")
         print(" 'S' - sortuj rosnąco")
+        print(" '+ - dodaj elementy")
         print(" 'q' - wyjscie")
 
         c = input("Wybierz operację: ")
@@ -23,6 +24,8 @@ if __name__ == '__main__':
                 lista = sort_desc(lista)
             elif c == 'S':
                 lista = sort_asc(lista)
-           
+            elif c == '+':
+                suma = sum(lista)
+                print(f"Suma: {suma}")
         else:
             break
