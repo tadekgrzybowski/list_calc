@@ -29,6 +29,6 @@ if __name__ == '__main__':
                 suma = sum(lista)
                 print(f"Suma: {suma}")
             elif c == 'm':
-                print("Najwiękrzy element: {}".format(max(lista)))
+                print("Największy element: {}".format(max(lista)))
         else:
             break
