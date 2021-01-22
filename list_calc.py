@@ -16,6 +16,7 @@ if __name__ == '__main__':
         print(" 's' - sortuj malejąco")
         print(" 'S' - sortuj rosnąco")
         print(" '+ - dodaj elementy")
+        print(" 'm' - największy element")
         print(" 'q' - wyjscie")
 
         c = input("Wybierz operację: ")
@@ -27,5 +28,7 @@ if __name__ == '__main__':
             elif c == '+':
                 suma = sum(lista)
                 print(f"Suma: {suma}")
+            elif c == 'm':
+                print("Najwiękrzy element: {}".format(max(lista)))
         else:
             break
