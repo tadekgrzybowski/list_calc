@@ -5,6 +5,9 @@ def sort_asc(lista):
 def sort_desc(lista):
     return sorted(lista,reverse=True)
 
+def double(lista):
+    return [x*2 for x in lista]
+
 if __name__ == '__main__':
     lista = [4,7,2,3,4,8,9,10]
     print("Program wykonuje operacje na listach")
@@ -15,6 +18,7 @@ if __name__ == '__main__':
 
         print(" 's' - sortuj malejąco")
         print(" 'S' - sortuj rosnąco")
+        print(" '2 - pomnoz elementy * 2")
         print(" '+ - dodaj elementy")
         print(" 'q' - wyjscie")
 
@@ -27,5 +31,7 @@ if __name__ == '__main__':
             elif c == '+':
                 suma = sum(lista)
                 print(f"Suma: {suma}")
+            elif c == '2':  
+                lista = double(lista) 
         else:
             break
