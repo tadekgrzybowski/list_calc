@@ -10,7 +10,8 @@ def double(lista):
 
 if __name__ == '__main__':
     lista = [4,7,2,3,4,8,9,10]
-    print("Program wykonuje operacje na listach")
+    print("------------------------------------")
+    print(" --> Program wykonuje operacje na listach <----")
   
     while True:
         print("\n-----------------")
@@ -23,7 +24,7 @@ if __name__ == '__main__':
         print(" 'm' - największy element")
         print(" 'q' - wyjscie")
 
-        c = input("Wybierz operację: ")
+        c = input(" Wybierz operację --> ")
         if c != 'q':
             if c == 's':
                 lista = sort_desc(lista)
