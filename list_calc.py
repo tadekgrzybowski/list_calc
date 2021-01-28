@@ -8,6 +8,9 @@ def sort_desc(lista):
 def double(lista):
     return [x*2 for x in lista]
 
+def triple(lista):
+    return [x*3 for x in lista]
+
 if __name__ == '__main__':
     lista = [4,7,2,3,4,8,9,10]
     print("Program wykonuje operacje na listach")
@@ -19,6 +22,7 @@ if __name__ == '__main__':
         print(" 's' - sortuj malejąco")
         print(" 'S' - sortuj rosnąco")
         print(" '2 - pomnoz elementy * 2")
+        print(" '3 - pomnoz elementy * 3")
         print(" '+ - dodaj elementy")
         print(" 'm' - największy element")
         print(" 'q' - wyjscie")
@@ -34,6 +38,8 @@ if __name__ == '__main__':
                 print(f"Suma: {suma}")
             elif c == '2':  
                 lista = double(lista) 
+            elif c == '3':  
+                lista = triple(lista) 
             elif c == 'm':
                 print("Największy element: {}".format(max(lista)))
         else:
