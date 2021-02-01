@@ -26,6 +26,7 @@ if __name__ == '__main__':
         print(" '3 - pomnoz elementy * 3")
         print(" '+ - dodaj elementy")
         print(" 'm' - największy element")
+        print(" 'ś' - średnia")
         print(" 'q' - wyjscie")
 
         c = input(" Wybierz operację --> ")
@@ -43,5 +44,7 @@ if __name__ == '__main__':
                 lista = triple(lista) 
             elif c == 'm':
                 print("Największy element: {}".format(max(lista)))
+            elif c == 'ś':
+                print(sum(lista)/len(lista))
         else:
             break
